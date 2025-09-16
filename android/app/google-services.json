@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "481487538423",
+    "project_id": "isro-quiz-app",
+    "storage_bucket": "isro-quiz-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481487538423:android:46032fb7f8df752721abf2",
+        "android_client_info": {
+          "package_name": "com.example.isro_quiz_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBChY-LVdnAiJRfJoIelU2rr-lrlEocz_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
