@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:isro_quiz_app/constants/text_constants.dart';
 import 'package:isro_quiz_app/module/auth/model/user_model.dart';
@@ -6,9 +7,19 @@ import 'package:isro_quiz_app/module/auth/service/auth_service.dart';
 import '../../../constants/route_constants.dart';
 
 class AuthController extends GetxController {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
   final AuthService _service = Get.find();
-  var user = Rxn<UserModel>();
+  var userModel = Rxn<UserModel>();
   var isLoading = false.obs;
+  Rxn<User> firebaseUser = Rxn<User>();
+
+  User? get user => firebaseUser.value;
+
+  @override
+  void onInit() {
+    super.onInit();
+    firebaseUser.bindStream(_auth.authStateChanges()); // Stream bind
+  }
 
   bool validation(String email, String password) {
     final emailRegex = RegExp(r"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$");

@@ -16,5 +16,7 @@ class AuthService {
     return cred.user;
   }
 
+  Stream<User?> get userChanges => _auth.authStateChanges();
+
   Future<void> signOut() => _auth.signOut();
 }

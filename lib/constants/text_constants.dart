@@ -14,4 +14,8 @@ class TextConstants {
   static const String loginFailed = "Login failed";
   static const String registerFailed = "registration failed";
 
+  //home
+  static const String mcq = "MCQ";
+  static const String learning = "Learning";
+
 }
