@@ -7,7 +7,7 @@ import '../../../constants/route_constants.dart';
 import '../controller/auth_controller.dart';
 
 class LoginView extends StatelessWidget {
-  final AuthController auth = Get.find();
+  final AuthController auth = Get.put(AuthController());
   final _formKey = GlobalKey<FormState>();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passController = TextEditingController();

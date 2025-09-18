@@ -25,9 +25,4 @@ class HomeController extends GetxController with GetSingleTickerProviderStateMix
     super.onClose();
   }
 
-  var selectedIndex = 0.obs;
-
-  void changeTab(int index) {
-    selectedIndex.value = index;
-  }
 }

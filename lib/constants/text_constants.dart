@@ -18,4 +18,9 @@ class TextConstants {
   static const String mcq = "MCQ";
   static const String learning = "Learning";
 
+  //learning
+  static const String spacecrafts = "Spacecrafts";
+  static const String launchers = "Launchers";
+  static const String satellites = "Satellites";
+  static const String centres = "Centres";
 }
