@@ -44,8 +44,9 @@ class RegisterView extends StatelessWidget {
                   ),
                   SizedBox(height: 18),
                   Obx(() {
-                    if (auth.isLoading.value)
+                    if (auth.isLoading.value) {
                       return CircularProgressIndicator();
+                    }
                     return SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(

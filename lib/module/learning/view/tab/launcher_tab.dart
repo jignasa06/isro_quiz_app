@@ -22,7 +22,7 @@ class LauncherTab extends StatelessWidget {
           final item = controller.launchers[index];
           return ListTile(
             leading: Icon(Icons.rocket),
-            title: Text(item.name),
+            title: Text(item.id),
             //subtitle: Text("ID: ${item.id}"),
           );
         },

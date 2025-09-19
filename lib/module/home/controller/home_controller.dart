@@ -1,28 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../constants/text_constants.dart';
 
-class HomeController extends GetxController with GetSingleTickerProviderStateMixin
-{
-  late TabController tabController;
-
+class HomeController extends GetxController {
   final List<Tab> tabs = const [
-    Tab(text: TextConstants.learning),
-    Tab(text: TextConstants.mcq),
+    Tab(text: TextConstants.learning, icon: Icon(Icons.school)),
+    Tab(text: TextConstants.mcq, icon: Icon(Icons.quiz)),
   ];
-
-  @override
-  void onInit() {
-    tabController = TabController(length: tabs.length, vsync: this);
-    super.onInit();
-  }
-
-  @override
-  void onClose() {
-    tabController.dispose();
-    super.onClose();
-  }
-
 }

@@ -22,11 +22,16 @@ class LearningView extends StatelessWidget {
           isScrollable: true,
           labelColor: Colors.blue,
           unselectedLabelColor: Colors.grey,
+          padding: EdgeInsets.zero,
+          labelPadding: const EdgeInsets.symmetric(horizontal: 16.0),
+          indicatorPadding: EdgeInsets.zero,
+          tabAlignment: TabAlignment.start,
           tabs: controller.tabs,
           controller: controller.tabController,
         ),
         Expanded(
           child: TabBarView(
+            controller: controller.tabController,
             children: [
               SpacecraftTab(),
               LauncherTab(),

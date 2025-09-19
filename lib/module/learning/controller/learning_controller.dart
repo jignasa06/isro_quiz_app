@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:isro_quiz_app/module/learning/repositories/api_repository.dart';
 import 'package:isro_quiz_app/module/learning/service/api_service.dart';
 
 import '../../../constants/text_constants.dart';
